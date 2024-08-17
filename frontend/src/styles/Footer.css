@@ -1,0 +1,31 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  width: 200px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  color: #aaa;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
