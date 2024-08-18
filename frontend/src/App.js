@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchCards = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/help-center"); // Update API endpoint to backend URL
+        const response = await fetch("http://localhost:3000/api/help-center"); 
         const data = await response.json();
         setCards(data);
       } catch (error) {
