@@ -44,18 +44,18 @@ cd backend
 npm install
 Run the Application:
 
-Frontend:
-
-bash
-Copy code
-cd frontend
-npm start
 Backend:
-
 bash
 Copy code
 cd backend
 npm start
+
+Frontend:
+bash
+Copy code
+cd frontend
+npm start
+
 Usage
 Access the frontend at http://localhost:3001.
 The backend API runs on http://localhost:3000.
