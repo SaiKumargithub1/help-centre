@@ -61,29 +61,29 @@ app.post("/cards", (req, res) => {
     return res.status(400).send("Missing required fields");
   }
   const newCard = { id: Date.now().toString(), title, description, link };
-  cardsData.push(newCard); // Use cardsData here
+  cardsData.push(newCard); 
   res.status(201).json(newCard);
 });
 
 // API endpoint to get all cards
 app.get("/cards", (req, res) => {
-  res.json(cardsData); // Use cardsData here
+  res.json(cardsData);
 });
 
 // API endpoint to get a specific card by title
 app.get("/cards/:title", (req, res) => {
   const { title } = req.params;
-  const card = cardsData.find((c) => c.title === title); // Use cardsData here
+  const card = cardsData.find((c) => c.title === title); 
   if (!card) {
     return res.status(404).send("Card not found");
   }
   res.json(card);
 });
 
-// Serve static files
+
 app.use(express.static(path.join(__dirname, "public")));
 
-// Serve the frontend application
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
